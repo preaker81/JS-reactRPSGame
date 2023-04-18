@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: "docs",
   },
-  base: process.env.NODE_ENV === 'production' ? '/repository-name/' : '/', // Set the base URL according to the environment
+  base: process.env.NODE_ENV === 'production' ? '/preaker81/JS-reactRPSGame/' : '/', // Set the base URL according to the environment
 });
