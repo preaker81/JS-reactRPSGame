@@ -1,11 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
+const repoBase = process.env.NODE_ENV === 'production' ? '/JS-reactRPSGame/' : '/'; // Set the base URL according to the environment
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: repoBase,
   build: {
     outDir: "docs",
   },
-  base: process.env.NODE_ENV === 'production' ? '/preaker81/JS-reactRPSGame/' : '/', // Set the base URL according to the environment
 });
